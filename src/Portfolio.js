@@ -28,7 +28,7 @@ const projects = [
         title: "Express Note Taking App",
         languages: "html, css, js,",
         packages: "Node.js, Express, Uniqid",
-        image: "/img/quizam.png",
+        image: "/img/Note-Taker.jpg",
         description: "A quick simple app that lets you write and save notes",
         live: "https://pure-hollows-51401.herokuapp.com/",
         repo: "https://github.com/TimmySigs/Note-Taker",
