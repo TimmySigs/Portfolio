@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from 'react';
 import { validateEmail } from '../utils/helpers';
 // import Navigation from './components/Navigation';
-require('dotenv').config()
+
 
 
 function Contact() {
-    const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_ID);
+    const [state, handleSubmit] = useForm('');
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
