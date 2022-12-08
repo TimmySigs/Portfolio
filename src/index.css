@@ -2,6 +2,7 @@ body {
   font-family: Work Sans;
   text-align: center;
   background-color: #264653;
+  color: antiquewhite;
 
 }
 
@@ -11,12 +12,16 @@ body {
   display: block;
   width: 100%;
   background-color: #2A9D8F;
+  color: antiquewhite;
+
 
 }
 
 div.navbar-brand {
   padding-top: 2em;
   margin-bottom: 2em;
+  color: antiquewhite;
+
 
 }
 
