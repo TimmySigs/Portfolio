@@ -49,7 +49,7 @@ function Portfolio() {
     return (
         <div>
             <p className="content is-medium">Portfolio</p>
-            <hr />
+            {/* <hr /> */}
 
             <Project projects={projects} />
         </div>
