@@ -5,7 +5,7 @@ function Resume() {
         <div className="columns">
             <div className="column">
                 <p className="content is-medium">Résumé</p>
-                <hr />
+                {/* <hr /> */}
 
                 <a
                     className="button is-primary"
@@ -20,7 +20,7 @@ function Resume() {
             </div>
             <div className="column">
                 <p className="content is-medium">Skills</p>
-                <hr />
+                {/* <hr /> */}
                 <ul>
                     <li>HTML, CSS, Javascript</li>
                     <li>JSON</li>

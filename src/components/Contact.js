@@ -1,39 +1,38 @@
 import React, { useState } from 'react';
-import { useForm } from 'react';
+// import { useForm } from 'react-hook-form';
 import { validateEmail } from '../utils/helpers';
 // import Navigation from './components/Navigation';
 
 
 
 function Contact() {
-    const [state, handleSubmit] = useForm('');
+    // const [state, handleSubmit] = useForm('');
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
-    // const handleSubmit = (e) => {
-    //   e.preventDefault();
-    //   if (!errorMessage) {
-    //     console.log('Submit Form', formState);
-    //   }
-    // };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+            console.log('Submit Form', formState);
+        }
+    };
 
     // function refreshPage() {
     //   window.location.reload(true);
     // }
 
 
-    if (state.succeeded) {
-        return (
-            <div>
-                <p>Thanks for reaching out!</p>
-                <button className="button is-medium is-primary is-half m-6" onClick={() => window.open("/#contact")}>Back to About</button>
-                {/* This form button is broken. It was supposed to refresh the page so you can submit a new form, but I'm changing this bug into a feature that takes you back to the about section. */}
-            </div>
-        );
-    }
+    // if (state.succeeded) {
+    //     return (
+    //         <div>
+    //             <p>Thanks for reaching out!</p>
+    //             <button className="button is-medium is-primary is-half m-6" onClick={() => window.open("/#contact")}>Back to About</button>
+    //         </div>
+    //     );
+    // }
 
 
     const handleChange = (e) => {
@@ -60,7 +59,7 @@ function Contact() {
     return (
         <div>
             <p className="content is-medium">Contact Me</p>
-            <hr />
+            {/* <hr /> */}
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="field">
                     <label className="label" htmlFor="name">Name</label>
